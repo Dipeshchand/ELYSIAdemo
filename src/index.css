@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@1,400&display=swap');
+@import "tailwindcss";
+@keyframes slideFadeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-fade {
+  animation: slideFadeDown 0.45s ease-out forwards;
+}

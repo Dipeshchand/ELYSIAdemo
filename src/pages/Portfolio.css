@@ -1,0 +1,88 @@
+.section-title {
+  text-align: center;
+  font-size: clamp(24px, 3vw, 32px);
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+}
+
+.portfolio-container {
+  padding: 40px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+ .underline {
+  width: 80px;
+  height: 4px;
+  background: #f9b234;
+  margin: 0 auto 20px;
+  border-radius: 2px;
+}
+
+.gallery-item {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+}
+
+.gallery-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 22px;
+}
+
+.gallery-card img {
+  width: 290px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-card:hover img {
+  transform: scale(1.1);
+}
+
+.magnify-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+  border-radius: 50%;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-card:hover .magnify-icon {
+  opacity: 1;
+}
+
+.gallery-icon {
+  font-size: 18px;
+  color: #222;
+}
+
+.gallery-title {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 900;
+  text-align: center;
+}
