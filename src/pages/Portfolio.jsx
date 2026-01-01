@@ -6,6 +6,26 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import "./Portfolio.css";
 // import s1 from "../../src/assets/images/s1.jpg";
+import s47 from "../../src/assets/images/slo1.jpeg";
+import s48 from "../../src/assets/images/slo2.jpeg";
+import s49 from "../../src/assets/images/slo3.jpeg";
+import s50 from "../../src/assets/images/slo4.jpeg";
+import s51 from "../../src/assets/images/slo5.jpeg";
+import s52 from "../../src/assets/images/slo6.jpeg";
+import s53 from "../../src/assets/images/slo7.jpeg";
+import s54 from "../../src/assets/images/slo8.jpeg";
+import s55 from "../../src/assets/images/slo9.jpeg";
+import s56 from "../../src/assets/images/slo10.jpeg";
+import s57 from "../../src/assets/images/slo11.png";
+import s58 from "../../src/assets/images/slo12.png";
+import s59 from "../../src/assets/images/slo13.png";
+import s60 from "../../src/assets/images/slo14.png";
+import s61 from "../../src/assets/images/slo15.png";
+import s62 from "../../src/assets/images/slo16.png";
+import s63 from "../../src/assets/images/slo17.png";
+import s64 from "../../src/assets/images/slo18.png";
+import s65 from "../../src/assets/images/slo19.png";
+import s66 from "../../src/assets/images/slo20.png";
 import s2 from "../../src/assets/images/s2.jpg";
 import s3 from "../../src/assets/images/s3.jpg";
 import s4 from "../../src/assets/images/s4.jpg";
@@ -60,6 +80,26 @@ export default function Portfolio() {
   // ---------- STATIC DISPLAY IMAGES ----------
   const staticImages =  [
   // { id: "st1", name: "Static 1", url: s1 },
+   { id: "st47", name: "Static 47", url: s47 },
+   { id: "st48", name: "Static 47", url: s48 },
+   { id: "st49", name: "Static 47", url: s49 },
+   { id: "st50", name: "Static 47", url: s50 },
+   { id: "st51", name: "Static 47", url: s51 },
+   { id: "st52", name: "Static 47", url: s52 },
+   { id: "st53", name: "Static 47", url: s53 },
+   { id: "st54", name: "Static 47", url: s54 },
+   { id: "st55", name: "Static 47", url: s55 },
+   { id: "st56", name: "Static 47", url: s56 },
+   { id: "st57", name: "Static 47", url: s57 },
+   { id: "st58", name: "Static 47", url: s58 },
+   { id: "st59", name: "Static 47", url: s59 },
+   { id: "st60", name: "Static 47", url: s60 },
+   { id: "st61", name: "Static 47", url: s61 },
+   { id: "st62", name: "Static 47", url: s62 },
+   { id: "st63", name: "Static 47", url: s63 },
+   { id: "st64", name: "Static 47", url: s64 },
+   { id: "st65", name: "Static 47", url: s65 },
+   { id: "st66", name: "Static 47", url: s66 },
   { id: "st2", name: "Static 2", url: s2 },
   { id: "st3", name: "Static 3", url: s3 },
   { id: "st4", name: "Static 4", url: s4 },

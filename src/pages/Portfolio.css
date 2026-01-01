@@ -16,6 +16,7 @@
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 25px;
 }
+
 h2 {
   font-size: 32px;
   font-weight: 700;
@@ -48,9 +49,9 @@ h2 {
 }
 
 .gallery-card img {
-  width: 290px;
-  height: 280px;
-  object-fit: cover;
+  width: 450px;
+  height: 400px;
+  /* object-fit: cover; */
   border-radius: 12px;
   transition: transform 0.3s ease;
 }

@@ -8,7 +8,7 @@ export default function Navbar() {
   return (
     <nav className="absolute top-0 left-0 w-full px-6 py-3 md:px-10 md:py-4 z-50
   bg-white/40 backdrop-blur-2xl border-b border-white/20
-  flex items-center justify-between">
+  flex items-center justify-between ">
       
       {/* Logo */}
       <h1 className="text-4xl md:text-4xl text-green-900 font-bold font-[Cormorant_Garamond] tracking-wide">
@@ -21,7 +21,7 @@ export default function Navbar() {
         <Link to="/home" className="hover:opacity-70">Home</Link>
         <Link to="/about" className="hover:opacity-70">About</Link>
         <Link to="/portfolio" className="hover:opacity-70">Portfolio</Link>
-        <Link to="/testimonials" className="hover:opacity-70">Wedding Films</Link>
+        <Link to="/testimonials" className="hover:opacity-70">Event Films</Link>
         <Link to="/contact" className="hover:opacity-70">Contact Us</Link>
       </ul>
 
