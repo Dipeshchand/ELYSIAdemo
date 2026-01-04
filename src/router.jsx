@@ -8,8 +8,9 @@ const IntroPage = lazy(() => import("./pages/IntroPage"));
 const Home = lazy(() => import("./pages/Home"));
 const About = lazy(() => import("./pages/About"));
 const Portfolio = lazy(() => import("./pages/Portfolio"));
-const Testimonials = lazy(() => import("./pages/Testimonials"));
+const Eventfilms = lazy(() => import("./pages/Eventfilms"));
 const Contact = lazy(() => import("./pages/Contact"));
+const Testimonial = lazy(()=>import("./pages/Testimonial"))
 
 // Simple loader
 const Loader = () => (
@@ -58,11 +59,20 @@ const router = createBrowserRouter([
           </Suspense>
         ),
       },
+      // 11
       {
-        path: "testimonials",
+        path: "eventfilms",
         element: (
           <Suspense fallback={<Loader />}>
-            <Testimonials />
+            <Eventfilms />
+          </Suspense>
+        ),
+      },
+      {
+        path: "testimonial",
+        element: (
+          <Suspense fallback={<Loader />}>
+            <Testimonial />
           </Suspense>
         ),
       },

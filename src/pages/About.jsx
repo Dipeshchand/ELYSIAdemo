@@ -66,7 +66,7 @@ export default function About() {
     "
           />
         </div>
-        <p className="font-serif italic mt-5 text-xl">Managing directors & Event planner</p>
+        <p className="font-serif italic mt-5 text-xl">Managing Director & Event planner</p>
         <p className="font-serif italic text-3xl">Sunil SL</p>
 
         {/* Quote */}

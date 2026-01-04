@@ -21,8 +21,9 @@ export default function Navbar() {
         <Link to="/home" className="hover:opacity-70">Home</Link>
         <Link to="/about" className="hover:opacity-70">About</Link>
         <Link to="/portfolio" className="hover:opacity-70">Portfolio</Link>
-        <Link to="/testimonials" className="hover:opacity-70">Event Films</Link>
+        <Link to="/eventfilms" className="hover:opacity-70">Event Films</Link>
         <Link to="/contact" className="hover:opacity-70">Contact Us</Link>
+        <Link to="/testimonial" className="hover:opacity-70">Testimonial</Link>
       </ul>
 
       {/* Mobile Hamburger */}
@@ -45,8 +46,9 @@ export default function Navbar() {
     <Link to="/home" onClick={() => setMenuOpen(false)}>Home</Link>
     <Link to="/about" onClick={() => setMenuOpen(false)}>About</Link>
     <Link to="/portfolio" onClick={() => setMenuOpen(false)}>Portfolio</Link>
-    <Link to="/testimonials" onClick={() => setMenuOpen(false)}>Wedding Films</Link>
+    <Link to="/eventfilms" onClick={() => setMenuOpen(false)}>Wedding Films</Link>
     <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact Us</Link>
+    <Link to="/testimonial" onClick={()=>setMenuOpen(false)}>Testimonial</Link>
   </ul>
 </div>
     </nav>
