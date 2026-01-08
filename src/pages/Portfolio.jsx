@@ -166,7 +166,7 @@ export default function Portfolio() {
   }, []);
 
   return (
-    <div className="portfolio-container  bg-[#F6F3EC] ">
+    <div className="portfolio-container  mt-30 bg-[#F6F3EC] ">
       <h2
         className="section-title"
         data-aos="fade-up"
@@ -182,16 +182,6 @@ export default function Portfolio() {
 
       <div className="underline" data-aos="fade-down" data-aos-delay="300"></div>
 
-      {/* ------------ STATIC IMAGES SECTION ------------ */}
-      <div className="gallery mt-28" data-aos="fade-up" data-aos-delay="200">
-        {staticImages.map((img) => (
-          <div key={img.id} className="gallery-item">
-            <div className="gallery-card">
-              <img src={img.url} alt={img.name} loading="lazy" />
-            </div>
-          </div>
-        ))}
-      </div>
 
       {/* ------------ API ALBUM IMAGES SECTION ------------ */}
       <div className="gallery" data-aos="fade-up" data-aos-delay="300">
@@ -225,6 +215,18 @@ export default function Portfolio() {
           </p>
         )}
       </div>
+
+            {/* ------------ STATIC IMAGES SECTION ------------ */}
+      <div className="gallery mt-28" data-aos="fade-up" data-aos-delay="200">
+        {staticImages.map((img) => (
+          <div key={img.id} className="gallery-item">
+            <div className="gallery-card">
+              <img src={img.url} alt={img.name} loading="lazy" />
+            </div>
+          </div>
+        ))}
+      </div>
+
     </div>
   );
 }
