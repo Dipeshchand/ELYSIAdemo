@@ -1,30 +1,18 @@
-
-
-import cover from "../assets/images/cover.jpg";
-import aboutus from "../assets/images/aboutus.jpg";
+import aboutus from "../assets/images/bead.jpg";
 
 export default function Contact() {
   return (
     <div className="w-full bg-[#F7F4ED]">
-
-      {/* TOP COVER IMAGE */}
-      <div>
+      <div className="relative w-full h-[50vh]   md:h-[85vh]  mt-20 overflow-hidden">
         <img
           src={aboutus}
           alt="cover"
-          className="
-            mt-35
-            w-full
-            h-[50vh]       /* Mobile → half screen */
-            md:h-screen    /* Desktop → full screen */
-            object-cover
-          "
+          className="absolute inset-0 w-full h-full object-cover object-center"
         />
       </div>
 
       {/* CONTACT FORM SECTION */}
       <section className="px-6 py-16 max-w-4xl mx-auto">
-
         {/* HEADING */}
         <h1 className="text-4xl md:text-5xl font-serif font-semibold text-center mb-6">
           Contact us
@@ -32,9 +20,10 @@ export default function Contact() {
 
         {/* DESCRIPTION */}
         <p className="text-lg text-gray-700 leading-relaxed text-center mb-4">
-          Please provide detailed information in the form below to help us tailor an accurate quote.
-          We typically respond within 24 hours, but if it's urgent or you haven't heard from us,
-          don't hesitate to reach out via the contact details below.
+          Please provide detailed information in the form below to help us
+          tailor an accurate quote. We typically respond within 24 hours, but if
+          it's urgent or you haven't heard from us, don't hesitate to reach out
+          via the contact details below.
         </p>
 
         {/* EMAIL + PHONE */}
@@ -47,7 +36,6 @@ export default function Contact() {
 
         {/* FORM */}
         <form className="bg-{#F8F5EF} p-10 rounded-xl shadow-lg space-y-6">
-
           {/* Name */}
           <div>
             <label className="block text-gray-800 font-medium mb-1">Name</label>
@@ -59,7 +47,9 @@ export default function Contact() {
 
           {/* Email Address */}
           <div>
-            <label className="block text-gray-800 font-medium mb-1">Email Address</label>
+            <label className="block text-gray-800 font-medium mb-1">
+              Email Address
+            </label>
             <input
               type="email"
               className="w-full border border-gray-300 px-4 py-3 rounded-lg focus:border-black outline-none"
@@ -68,7 +58,9 @@ export default function Contact() {
 
           {/* Contact Number */}
           <div>
-            <label className="block text-gray-800 font-medium mb-1">Contact Number</label>
+            <label className="block text-gray-800 font-medium mb-1">
+              Contact Number
+            </label>
             <input
               type="text"
               className="w-full border border-gray-300 px-4 py-3 rounded-lg focus:border-black outline-none"
@@ -77,7 +69,9 @@ export default function Contact() {
 
           {/* Event Details */}
           <div>
-            <label className="block text-gray-800 font-medium mb-1">Event Details</label>
+            <label className="block text-gray-800 font-medium mb-1">
+              Event Details
+            </label>
             <input
               type="text"
               className="w-full border border-gray-300 px-4 py-3 rounded-lg focus:border-black outline-none"
@@ -86,7 +80,9 @@ export default function Contact() {
 
           {/* Location */}
           <div>
-            <label className="block text-gray-800 font-medium mb-1">Location</label>
+            <label className="block text-gray-800 font-medium mb-1">
+              Location
+            </label>
             <input
               type="text"
               className="w-full border border-gray-300 px-4 py-3 rounded-lg focus:border-black outline-none"
@@ -95,7 +91,9 @@ export default function Contact() {
 
           {/* Date/Duration */}
           <div>
-            <label className="block text-gray-800 font-medium mb-1">Date/Duration</label>
+            <label className="block text-gray-800 font-medium mb-1">
+              Date/Duration
+            </label>
             <input
               type="text"
               className="w-full border border-gray-300 px-4 py-3 rounded-lg focus:border-black outline-none"
@@ -107,9 +105,7 @@ export default function Contact() {
             <label className="block text-gray-800 font-medium mb-1">
               Preferred Form of Contact
             </label>
-            <select
-              className="w-full border border-gray-300 px-4 py-3 rounded-lg focus:border-black outline-none"
-            >
+            <select className="w-full border border-gray-300 px-4 py-3 rounded-lg focus:border-black outline-none">
               <option>Select</option>
               <option>Call</option>
               <option>E-mail</option>
@@ -119,7 +115,9 @@ export default function Contact() {
 
           {/* Message */}
           <div>
-            <label className="block text-gray-800 font-medium mb-1">Message</label>
+            <label className="block text-gray-800 font-medium mb-1">
+              Message
+            </label>
             <textarea
               rows="5"
               className="w-full border border-gray-300 px-4 py-3 rounded-lg focus:border-black outline-none"
@@ -133,7 +131,6 @@ export default function Contact() {
           >
             Submit
           </button>
-
         </form>
       </section>
     </div>

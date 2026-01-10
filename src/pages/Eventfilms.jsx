@@ -8,6 +8,7 @@ import video3 from "../assets/videos/entrence.mp4";
 import video4 from "../assets/videos/high.mp4";
 import video5 from "../assets/videos/propose.mp4";
 import video6 from "../assets/videos/team.mp4";
+import videos7 from "../assets/videos/video.mp4"
 
 const STATIC_VIDEOS = [
   { type: "local", src: video1 },
@@ -15,6 +16,7 @@ const STATIC_VIDEOS = [
   { type: "local", src: video3 },
   { type: "local", src: video4 },
   { type: "local", src: video5 },
+  { type: "local", src: videos7 },
   { type: "local", src: video6 },
 ];
 
@@ -50,7 +52,6 @@ export default function VideoSection() {
 
     fetchYoutubeVideo();
   }, []);
-
   return (
     <section className="py-20 px-4 mt-50 bg-[#F6F3EC]">
       <div className="max-w-7xl mx-auto">
