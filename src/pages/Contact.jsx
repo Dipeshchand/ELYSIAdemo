@@ -1,15 +1,15 @@
-import aboutus from "../assets/images/bead.jpg";
+import aboutus from "../assets/images/about.jpeg";
 
 export default function Contact() {
   return (
     <div className="w-full bg-[#F7F4ED]">
-      <div className="relative w-full h-[50vh]   md:h-[85vh]  mt-20 overflow-hidden">
-        <img
-          src={aboutus}
-          alt="cover"
-          className="absolute inset-0 w-full h-full object-cover object-center"
-        />
-      </div>
+      <div className="relative w-full h-[50vh] md:h-[85vh] mt-20 overflow-hidden bg-[#F7F4ED]">
+  <img
+    src={aboutus}
+    alt="cover"
+    className="absolute inset-0 w-full h-full object-cover md:object-contain"
+  />
+</div>
 
       {/* CONTACT FORM SECTION */}
       <section className="px-6 py-16 max-w-4xl mx-auto">

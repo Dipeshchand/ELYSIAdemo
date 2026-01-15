@@ -32,7 +32,7 @@ export default function VideoSection() {
     const fetchYoutubeVideo = async () => {
       try {
         const res = await fetch(
-          `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${CHANNEL_ID}&type=video&maxResults=1&order=date&key=${API_KEY}`
+          `https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=${CHANNEL_ID}&type=video&maxResults=10&order=date&key=${API_KEY}`
         );
 
         const data = await res.json();
