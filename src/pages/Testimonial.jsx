@@ -1,30 +1,10 @@
-// import React from 'react'
-// import testmonals1 from "../../src/assets/images/testimonals1.png"
-
-// function Testimonial() {
-//   return (
-//     <>
-// <div className="mt-36 md:mt-[20%] lg:mt-[10%] bg-[#F7F4ED] flex justify-center px-4">
-//   <div className="w-full flex justify-center">
-//     <img
-//       src={testmonals1}
-//       alt="testimonial"
-//       className="w-full max-w-[350px] md:max-w-[450px] lg:max-w-[600px] object-contain"
-//     />
-//   </div>
-// </div>
-//     </>
-//   )
-// }
-
-// export default Testimonial
 
 import React from "react";
-import testmonals1 from "../../src/assets/images/testimonals1.png";
+import testmonals1 from "../../src/assets/images/A&F.png";
 import testmonals2 from "../../src/assets/images/testimonals2.png";
-import testmonals3 from "../../src/assets/images/testimonals3.png";
-import testmonals4 from "../../src/assets/images/testimonals4.png";
-import testmonals5 from "../../src/assets/images/testimonals5.png";
+import testmonals3 from "../../src/assets/images/A&A.png";
+import testmonals4 from "../../src/assets/images/R&S.png";
+import testmonals5 from "../../src/assets/images/S&A.png";
 import testmonals6 from "../../src/assets/images/testimonals6.png";
 
 function Testimonial() {
