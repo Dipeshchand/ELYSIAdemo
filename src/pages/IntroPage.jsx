@@ -7,7 +7,6 @@ import img4 from "../assets/images/main-4.jpg";
 import img5 from "../assets/images/hero-bg.png";
 import img6 from "../assets/images/fifth.jpg";
 import img7 from "../assets/images/seventh.jpg";
-//
 import img8 from "../assets/images/story-img-1.jpg";
 import img9 from "../assets/images/first.jpg";
 import img10 from "../assets/images/bead.jpg";
@@ -28,21 +27,15 @@ export default function IntroPage() {
   let imageIndex = 0;
 
   return (
-    <div className="w-full h-screen ">
-        {/* overflow-hidden */}
+    <div className="w-full h-screen">
       <div
         className="
-          grid
-          grid-cols-3
-          grid-rows-5
-          md:grid-cols-5
-          md:grid-rows-3
-          w-full
-          h-full
+          grid grid-cols-3 grid-rows-5
+          md:grid-cols-5 md:grid-rows-3
+          w-full h-full
         "
       >
         {Array.from({ length: 15 }).map((_, i) => {
-          // CENTER CELL (index 7)
           if (i === 7) {
             return (
               <div
@@ -52,8 +45,8 @@ export default function IntroPage() {
                 <div className="text-center">
                   <h1 className="text-3xl md:text-5xl font-baskervville mb-4">
                     ELYSIA
-                  </h1>  
-                  <button 
+                  </h1>
+                  <button
                     onClick={() => navigate("/home")}
                     className="px-6 py-2.5 bg-[#5A3F33] text-white rounded-full"
                   >
@@ -70,7 +63,9 @@ export default function IntroPage() {
             <div key={i} className="overflow-hidden">
               <img
                 src={img}
-                alt=""
+                loading="lazy"
+                decoding="async"
+                alt="gallery"
                 className="w-full h-full object-cover"
               />
             </div>

@@ -36,12 +36,16 @@ export default function StorySection() {
           {/* BACK IMAGE */}
           <img
             src={img1}
+            loading="lazy"
+             decoding="async"
             className="w-[250px] md:w-[400px] lg:w-[450px]  translate-x-26  rounded-lg shadow-lg opacity-90"
           />
 
           {/* FRONT IMAGE */}
           <img
             src={img2}
+             loading="lazy"
+             decoding="async"
             className="w-[170px] md:w-[260px] lg:w-[320px] rounded-lg shadow-xl absolute top-10 left-8 md:top-20 md:left-10"
           />
         </div>
