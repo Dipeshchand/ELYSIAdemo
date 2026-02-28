@@ -23,8 +23,8 @@ export default function Navbar() {
         <Link to="/portfolio" className="hover:opacity-70"> Gallery Portfolio</Link>
         <Link to="/eventfilms" className="hover:opacity-70">Event Films</Link>
         <Link to="/contact" className="hover:opacity-70">Contact Us</Link>
-        <Link to="/testimonial" className="hover:opacity-70">Testimonial</Link>
-        <Link to="/portfolioUpload"className="hover:opacity-70">Event Portfolio </Link>
+        {/* <Link to="/testimonial" className="hover:opacity-70">Testimonial</Link>
+        <Link to="/portfolioUpload"className="hover:opacity-70">Event Portfolio </Link> */}
       </ul>
 
       {/* Mobile Hamburger */}
