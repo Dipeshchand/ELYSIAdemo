@@ -118,7 +118,7 @@ export default function AlbumPage() {
           {photos.map((photo) => (
             <div
               key={photo._id}
-              className="overflow-hidden rounded-xl shadow-md"
+              className="overflow-hidden rounded-xl shadow-md "
             >
               <img
                 src={photo.url}
