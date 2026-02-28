@@ -9,7 +9,7 @@ export default function Album() {
   useEffect(() => {
     async function load() {
       // Get all public albums
-      const albums = await fetch("http://localhost:5000/albums/public")
+      const albums = await fetch("https://elysiademo.onrender.com/albums/public")
         .then(r => r.json());
 
       const found = albums.find(a => a.slug === slug);
@@ -19,7 +19,7 @@ export default function Album() {
 
       // Get public photos of album
       const images = await fetch(
-        `http://localhost:5000/upload/album/${found._id}`
+        `https://elysiademo.onrender.com/upload/album/${found._id}`
       ).then(r => r.json());
 
       setPhotos(images);

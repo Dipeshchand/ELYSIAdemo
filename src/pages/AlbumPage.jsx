@@ -78,7 +78,7 @@ export default function AlbumPage() {
   useEffect(() => {
     async function loadPhotos() {
       const res = await fetch(
-        `http://localhost:5000/photos/album/${name}`
+        `https://elysiademo.onrender.com/photos/album/${name}`
       );
 
       const data = await res.json();
