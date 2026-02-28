@@ -20,10 +20,11 @@ export default function Navbar() {
       <ul className="hidden md:flex gap-10 text-lg font-light">
         <Link to="/home" className="hover:opacity-70">Home</Link>
         <Link to="/about" className="hover:opacity-70">About</Link>
-        <Link to="/portfolio" className="hover:opacity-70">Portfolio</Link>
+        <Link to="/portfolio" className="hover:opacity-70"> Gallery Portfolio</Link>
         <Link to="/eventfilms" className="hover:opacity-70">Event Films</Link>
         <Link to="/contact" className="hover:opacity-70">Contact Us</Link>
         <Link to="/testimonial" className="hover:opacity-70">Testimonial</Link>
+        <Link to="/portfolioUpload"className="hover:opacity-70">Event Portfolio </Link>
       </ul>
 
       {/* Mobile Hamburger */}

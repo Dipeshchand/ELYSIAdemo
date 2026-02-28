@@ -10,8 +10,10 @@ const About = lazy(() => import("./pages/About"));
 const Portfolio = lazy(() => import("./pages/Portfolio"));
 const Eventfilms = lazy(() => import("./pages/Eventfilms"));
 const Contact = lazy(() => import("./pages/Contact"));
-const Testimonial = lazy(()=>import("./pages/Testimonial"))
-
+const Testimonial = lazy(()=>import("./pages/Testimonial"));
+const Admin = lazy(()=>import("./pages/Admin"));
+const PortfolioUpload = lazy(()=> import("./pages/PortfoilioUpload"));
+const Album = lazy(()=> import("./pages/Album"))
 // Simple loader
 const Loader = () => (
   <div className="h-screen flex items-center justify-center text-lg font-light">
@@ -85,13 +87,35 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "album/:name",
+        path: "portfolio/:name",
         element: (
           <Suspense fallback={<Loader />}>
             <AlbumPage />
           </Suspense>
         ),
       },
+      {
+        path:"/admin",
+        element:(
+          <Suspense fallback={<Loader />}>
+            <Admin />
+          </Suspense>
+        )
+      },
+      {
+        path:"/portfolioUpload",
+        element:(
+          <Suspense fallback={<Loader />}>
+            <PortfolioUpload />
+          </Suspense>
+        )
+      },{
+        path:"/album",element:(
+          <Suspense fallback={<Loader />}>
+            <Album />
+          </Suspense>
+        )
+      }
     ],
   },
 ]);
