@@ -85,6 +85,7 @@ export default function About() {
           alt="Elysia Decorative"
           className="w-full object-cover"
         /> */}
+        <div></div>
       </div>
     </section>
   );
