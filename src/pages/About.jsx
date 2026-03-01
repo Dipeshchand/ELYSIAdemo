@@ -80,11 +80,11 @@ export default function About() {
 
       {/* Bottom Full Image */}
       <div className="mt-16 md:mt-20">
-        <img
+        {/* <img
           src={cover1}
           alt="Elysia Decorative"
           className="w-full object-cover"
-        />
+        /> */}
       </div>
     </section>
   );
